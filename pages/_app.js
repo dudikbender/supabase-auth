@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import Head from 'next/head'
 
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
   return (
     <>
     <Head>
@@ -13,7 +13,6 @@ function MyApp({ Component, pageProps }) {
         <meta name="viewport" content="initial-scale=1 width=device-width" />
         <link rel="icon" href="/logos/bg-favicon-removebg.png" />
       </Head>
-  <Component {...pageProps} /></>)
+  <Component {...pageProps} />
+  </>)
 }
-
-export default MyApp

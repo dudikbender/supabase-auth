@@ -6,6 +6,7 @@ import Account from '../components/Account'
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true)
   const [session, setSession] = useState(null)
+  console.log(session)
 
   useEffect(() => {
     let mounted = true
